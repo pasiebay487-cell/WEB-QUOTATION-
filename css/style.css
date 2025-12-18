@@ -30,14 +30,28 @@ body {
 
 
 .invoice-info {
-  background-color: #f8f9fa;
+  background-color: transparent;
   margin-bottom: 0;
+  border: none !important;
+}
+
+.invoice-info th,
+.invoice-info td {
+  border: none !important;
+  padding: 0.5rem 0 !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.invoice-info th:last-child,
+.invoice-info td:last-child {
+  border-bottom: none !important;
 }
 
 .invoice-number-input {
-  border: 1px solid #dee2e6;
-  padding: 0.25rem 0.5rem;
+  border: none !important;
+  padding: 0.25rem 0 !important;
   font-size: 0.9rem;
+  text-align: right;
 }
 
 .invoice-header {
@@ -218,6 +232,24 @@ table th, table td {
     margin-bottom: 0.5rem !important;
   }
 
+  .invoice-info th,
+  .invoice-info td {
+    border: none !important;
+    padding: 0.2rem 0 !important;
+    border-bottom: 0.5px solid #999 !important;
+  }
+
+  .invoice-info tr:last-child th,
+  .invoice-info tr:last-child td {
+    border-bottom: none !important;
+  }
+
+  .invoice-number-input {
+    border: none !important;
+    padding: 0 !important;
+    text-align: right !important;
+  }
+
   .mb-3 { margin-bottom: 0.3rem !important; }
   .mb-4 { margin-bottom: 0.5rem !important; }
   .mb-1 { margin-bottom: 0.1rem !important; }
@@ -269,6 +301,11 @@ table th, table td {
     display: none !important;
   }
 
+  th .form-label {
+    display: inline !important;
+    font-size: 11px !important;
+  }
+
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none !important;
@@ -281,6 +318,7 @@ table th, table td {
     padding: 0 !important;
     text-align: right !important;
     font-size: 11px !important;
+    width: 100% !important;
   }
 
   .table {
